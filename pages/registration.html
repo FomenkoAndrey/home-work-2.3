@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Document</title>
 </head>
 
 <body>
+
 <h1>Регистрация</h1>
+
 <ul>
   <li><a href="../index.html">Главная</a></li>
   <li><a href="articles.html">Статьи</a></li>
@@ -21,7 +23,6 @@
 </ul>
 
 <form action="register.php" method="post">
-
   <fieldset>
     <legend>#1</legend>
     <div>
@@ -30,13 +31,12 @@
     </div>
     <div>
       <label for="firstname">Имя</label>
-      <input id="firstname" required name="firstname" placeholder="Имя" type="text">
+      <input id="firstname" name="firstname" placeholder="Имя" required type="text">
     </div>
     <div>
       <label for="lastname">Отчество</label>
       <input id="lastname" name="lastname" placeholder="Отчество" type="text">
     </div>
-
     <div>
       <label for="pasw">Пароль</label>
       <input id="pasw" name="pasw" placeholder="Пароль" type="password">
@@ -57,70 +57,76 @@
       <label for="file">Добавить фотографию:</label>
       <input id="file" name="file" type="file">
     </div>
-
   </fieldset>
+
   <fieldset>
     <legend>#2</legend>
     <p>Выбрать пол</p>
     <div>
-      <input id="gender-male" type="radio" name="gender" value="male">
+      <input id="gender-male" name="gender" type="radio" value="male">
       <label for="gender-male">Мужской</label>
     </div>
     <div>
-      <input id="gender-female" type="radio" name="gender" value="female">
+      <input id="gender-female" name="gender" type="radio" value="female">
       <label for="gender-female">Женский</label>
     </div>
   </fieldset>
+
   <fieldset>
     <legend>#3</legend>
     <p>Выберите предпочитаемую кухню:</p>
     <div>
-      <input id="ua" checked name="kitchen" value="ukrainian" type="checkbox">
+      <input checked id="ua" name="kitchen" type="checkbox" value="ukrainian">
       <label for="ua">Украинская</label>
     </div>
     <div>
-      <input id="gr" name="kitchen" value="georgian" type="checkbox">
+      <input id="gr" name="kitchen" type="checkbox" value="georgian">
       <label for="gr">Грузинская</label>
     </div>
     <div>
-      <input id="it" name="kitchen" value="italian" type="checkbox">
+      <input id="it" name="kitchen" type="checkbox" value="italian">
       <label for="it">Итальянская</label>
     </div>
     <div>
-      <input id="fr" name="kitchen" value="french" type="checkbox">
+      <input id="fr" name="kitchen" type="checkbox" value="french">
       <label for="fr">Французская</label>
     </div>
     <div>
-      <input id="us" name="kitchen" value="american" type="checkbox">
+      <input id="us" name="kitchen" type="checkbox" value="american">
       <label for="us">Американская</label>
     </div>
     <div>
-      <input id="jp" name="kitchen" value="japanese" type="checkbox">
+      <input id="jp" name="kitchen" type="checkbox" value="japanese">
       <label for="jp">Японская</label>
     </div>
     <div>
-      <input id="ch" name="kitchen" value="chinese" type="checkbox">
+      <input id="ch" name="kitchen" type="checkbox" value="chinese">
       <label for="ch">Китайская</label>
     </div>
   </fieldset>
+
   <fieldset>
     <legend>#4</legend>
     <div>
       <label for="txt">О себе:</label>
-      <textarea placeholder="Введите информацию о себе..." name="txt" id="txt" cols="30" rows="10"></textarea>
+      <textarea cols="30" id="txt" name="txt" placeholder="Введите информацию о себе..." rows="10"></textarea>
     </div>
   </fieldset>
   <fieldset>
     <legend>#5</legend>
-
-    <button type="submit">Зарегистрироваться</button>
-    <button type="reset">Очистить форму</button>
-
+    <div>
+      <button type="submit">Зарегистрироваться</button>
+    </div>
+    <div>
+      <button type="reset">Очистить форму</button>
+    </div>
   </fieldset>
 </form>
+
 <footer>
   <div>&copy; Natali Ignateva</div>
 </footer>
+
 </body>
 
 </html>
