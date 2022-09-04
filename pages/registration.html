@@ -22,12 +22,12 @@
   <li><a href="registration.html">Регистрация</a></li>
 </ul>
 
-<form action="register.php" method="post">
+<form action="https://tests.fomenko.top/echo/index.php" method="get">
   <fieldset>
-    <legend>#1</legend>
+    <legend>#1 Основная группа</legend>
     <div>
-      <label for="femeli">Фамилия</label>
-      <input id="femeli" name="femeli" placeholder="Фамилия" type="text">
+      <label for="family">Фамилия</label>
+      <input id="family" name="family" placeholder="Фамилия" type="text">
     </div>
     <div>
       <label for="firstname">Имя</label>
@@ -38,8 +38,8 @@
       <input id="lastname" name="lastname" placeholder="Отчество" type="text">
     </div>
     <div>
-      <label for="pasw">Пароль</label>
-      <input id="pasw" name="pasw" placeholder="Пароль" type="password">
+      <label for="password">Пароль</label>
+      <input id="password" name="password" placeholder="Пароль" type="password">
     </div>
     <div>
       <label for="email">Почта</label>
@@ -47,7 +47,7 @@
     </div>
     <div>
       <label for="url">Адрес сайта</label>
-      <input id="url" name="url" type="url" value="http://mysite.name">
+      <input id="url" name="url" type="url" value="https://mysite.name">
     </div>
     <div>
       <label for="date">Дата рождения:</label>
@@ -60,8 +60,7 @@
   </fieldset>
 
   <fieldset>
-    <legend>#2</legend>
-    <p>Выбрать пол</p>
+    <legend>#2 Выбрать пол</legend>
     <div>
       <input id="gender-male" name="gender" type="radio" value="male">
       <label for="gender-male">Мужской</label>
@@ -73,8 +72,7 @@
   </fieldset>
 
   <fieldset>
-    <legend>#3</legend>
-    <p>Выберите предпочитаемую кухню:</p>
+    <legend>#3 Выберите кухню</legend>
     <div>
       <input checked id="ua" name="kitchen" type="checkbox" value="ukrainian">
       <label for="ua">Украинская</label>
@@ -106,14 +104,14 @@
   </fieldset>
 
   <fieldset>
-    <legend>#4</legend>
+    <legend>#4 Подробности</legend>
     <div>
       <label for="txt">О себе:</label>
       <textarea cols="30" id="txt" name="txt" placeholder="Введите информацию о себе..." rows="10"></textarea>
     </div>
   </fieldset>
   <fieldset>
-    <legend>#5</legend>
+    <legend>#5 Действия</legend>
     <div>
       <button type="submit">Зарегистрироваться</button>
     </div>
